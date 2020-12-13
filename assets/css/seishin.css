@@ -1,0 +1,720 @@
+@font-face {
+    font-family: 'palo_seco';
+    src: url('/assets/fonts/Paloseco-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'palo_seco_light';
+    src: url('/assets/fonts/Paloseco-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'palo_seco_italic';
+    src: url('/assets/fonts/Paloseco-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* unvisited link */
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; font-family: 'palo_seco'; overflow-x: hidden}
+
+.nav_bar{
+    height: 70px;
+    padding: 5px 30px;
+    -webkit-box-shadow: 1px -8px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -8px 32px -6px rgba(0,0,0,0.75);
+    box-shadow: 1px -8px 32px -6px rgba(0,0,0,0.75);
+}
+.logo_nav{
+    max-height: 100%;
+}
+.nav_bar *{
+    height: 100%;
+    max-width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    font-size: 1.6rem;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+nav ul li{
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #CC2128;
+}
+.bandera_mex, .bandera_jap{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0 15px;
+    width: 25px;
+    display: inline-block;
+}
+.slider_home_text{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 400px;
+    max-width: 80%;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'palo_seco';
+}
+.slider_home_text span{
+    color: #CC2128;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+.acerca_de{
+    position: relative;
+}
+.acerca_de_img{
+    width: 100%;
+    transform: translate(-250px, 0);
+    opacity: 0;
+    transition: 400ms ease-in-out;
+}
+.acerca_de_gris{
+    width: 100%;
+    background-color: #f3f4f5;
+    font-family: 'palo_seco_light';
+    font-size: 1.7rem;
+    padding: 20px 30px;
+    transform: translate(250px, 0);
+    opacity: 0;
+    transition: 400ms ease-in-out;
+}
+.acerca_de_img.animado, .acerca_de_gris.animado{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.acerca_de_titulo{
+    text-align: center;
+    font-family: 'palo_seco';
+    font-size: 3rem;
+    color: #CC2128;
+}
+.mision_globo, .vision_globo{
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+.acerca_de_parrafo{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    font-family: 'palo_seco_light';
+    font-size: 1.6rem;
+    color: #959698;
+}
+.mision{
+    height: 250px;
+}
+.vision{
+    text-align: right;
+    height: 250px;
+}
+.mision_vision{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.valor_img{
+    max-width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+.valores{
+    overflow: hidden;
+}
+.valores_cont{
+    background-color: #f3f4f5;
+    padding-bottom: 30px;
+}
+.valores_titulo{
+    font-size: 4rem;
+    text-align: center;
+    color: #CC2128;
+}
+.empresas_cover_bullets{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 300px;
+    max-width: 45%;
+    z-index: 2;
+}
+.cover_bullet{
+    margin: 30px 0;
+    background-color: rgba(149, 150, 152, 0.6);
+    text-align: center;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+.empresas_cover_cta{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 400px;
+    max-width: 50%;
+    background-color: rgba(255, 39, 49, 0.6);
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: right;
+}
+.empleos_cover_cta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: rgba(255, 39, 49, 0.6);
+    padding: 10px 15px 10px 30px;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.empleos_cover_cta.anim_izq{
+    transform: translate(-50%, -150%);
+}
+.empleos_cover_cta.anim_izq.animado{
+    transform: translate(-50%, -50%);
+}
+.empresas_razones{
+    text-align: center;
+    background-color: #f3f4f5;
+    overflow: hidden;
+    margin-bottom: 80px;
+    -webkit-box-shadow: 0px 3px 21px 1px rgba(171,171,171,1);
+    -moz-box-shadow: 0px 3px 21px 1px rgba(171,171,171,1);
+    box-shadow: 0px 3px 21px 1px rgba(171,171,171,1);
+}
+.empresas_razones_titulo{
+    color: #cc2229;
+    font-size: 2.5rem;
+    padding: 0 15px;
+    margin: 30px 0;
+}
+.empresas_razon{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+.col_central{
+    border-top: 2px solid #96999b;
+    border-bottom: 2px solid #96999b;
+    border-left: none;
+    border-right: none;
+}
+.empresas_beneficios{
+    margin-bottom: 80px;
+}
+.empresas_beneficios_titulo{
+    color: #cc2229;
+    font-size: 2rem;
+    text-align: center;
+}
+.empresas_beneficio_cont{
+    height: 500px;
+    color: #fff;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.beneficio_grantizar{
+    background-image: url(/assets/img/garantizar.jpg);
+}
+.beneficio_opti{
+    background-image: url(/assets/img/optimizacion.jpg);
+}
+.beneficio_romper{
+    background-image: url(/assets/img/natal.jpg);
+}
+.beneficio_crecimiento{
+    background-image: url(/assets/img/crecimiento.jpg);
+}
+.beneficio_flexi{
+    background-image: url(/assets/img/flexibilidad.jpg);
+}
+.beneficio_salario{
+    background-image: url(/assets/img/salario.jpg);
+}
+.beneficio_otros{
+    background-image: url(/assets/img/otros.jpg);
+}
+.beneficio_titulo{
+    font-size: 2.5rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.beneficio_titulo.onit{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+.beneficio_texto_cont{
+    padding: 20px 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    overflow: hidden;
+    transition: all 400ms ease-out;
+}
+.beneficio_texto_cont.onit{
+    height: 80%;
+}
+.beneficio_texto_cont.abierto{
+    height: 80%;
+}
+.beneficio_texto_cont_1{
+    background-color: rgba(149, 150, 157, 0.7);
+}
+.beneficio_texto_cont_2{
+    background-color: rgba(246, 208, 70, 0.7);
+}
+.beneficio_texto_cont_3{
+    background-color: rgba(204, 34, 41, 0.7);
+}
+.beneficio_texto_cont_4{
+    background-color: rgba(47, 131, 226, 0.7);
+}
+.beneficio_texto{
+    font-size: 1.3rem;
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 300ms ease-out;
+}
+.beneficio_texto.onit{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.beneficio_table{
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.empresas_servicios_cont{
+    background: url(/assets/img/servicios.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0;
+    color: #ffffff;
+}
+.servicios_car_item{
+    font-size: 1.6rem;
+}
+.servicios_car_titulo{
+    font-family: 'palo_seco_italic';
+    font-size: 2.2rem;
+    color: #cc2229;
+}
+.servicios_car_rojo{
+    background: #ee1c25;
+    background-size: cover;
+    height: 200px;
+    width: 95%;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: top;
+}
+.servicios_car_gris{
+    width: 95%;
+    height: 400px;
+    background: #959698;
+    text-align: center;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.servicio_car_rojo_texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+.servicios_car_gris_blocktext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+.empresas_servicios_subtitulo{
+    font-size: 1.8rem;
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto 50px;
+}
+#carouselExampleIndicators .carousel-indicators{
+    bottom: -50px;
+}
+#carouselExampleIndicators .carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 3px solid rgba(204,35,42,1);
+}
+#carouselExampleIndicators .carousel-indicators .active{
+    background-color: rgba(204,35,42,1);
+}
+.servicios_car_gris ul{
+    list-style-position: inside;
+}
+.empleos_flujo{
+    text-align: center;
+}
+.empleo_flujo_icono_cont{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 600ms cubic-bezier(.87,-.41,.19,1.44);
+}
+.empleo_flujo_icono_cont.animado{
+    opacity: 1;
+    transform: scale(1);
+}
+.flujo_icono_texto{
+    margin: 20px auto;
+    width: 90%;
+    color: #cc2129;
+    font-size: 2rem;
+    font-family: 'palo_seco_italic';
+}
+.empleo_flujo_icono_img{
+    max-width: 100%;
+}
+.servicio_car_gris_texto{
+    text-align: left;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.contacto_titulo{
+    font-family: 'palo_seco_italic';
+    font-size: 2.5rem;
+    margin: 40px auto;
+    color: #cc2229;
+    text-align: center;
+}
+.disponibilidad_otros{
+    text-align: right;
+}
+label.col-10{
+    text-align: right;
+}
+.boton_contacto{
+    border: none;
+    background-color: #cc2129;
+    color: #fff;
+    padding: 10px 30px;
+}
+.empleos_flujo_iconos{
+    padding-bottom: 40px;
+}
+.valores_item{
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 600ms cubic-bezier(.87,-.41,.19,1.44);
+}
+.valores_item.animado{
+    opacity: 1;
+    transform: scale(1);
+}
+.anim_izq{
+    transform: translate(-250px, 0);
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+.anim_der{
+    transform: translate(250px, 0);
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+.anim_up{
+    transform: translate(0, -250px);
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+.anim_down{
+    transform: translate(0, 250px);
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+.anim_izq.animado, .anim_der.animado, .anim_up.animado, .anim_down.animado{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.control-label{
+    opacity: 0;
+    transform: translate(-350px, 0);
+    transition: all 300ms ease-in-out;
+}
+form .col-md-9{
+    opacity: 0;
+    transform: translate(250px, 0);
+    transition: all 300ms ease-in-out;
+}
+.control-label.animado, form .col-md-9.animado{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.boton_slider_home{
+    padding: 5px 15px;
+    background-color: #96999b;
+    color: #000000;
+    font-size: 1.8rem;
+    display: block;
+    margin: 20px auto 0;
+}
+.tel_menu{
+    font-family: 'Helveitca', Arial, sans-serif;
+    font-weight: bold;
+}
+.contacto_empresa{
+    position: fixed;
+    z-index: 10000;
+    top: 80%;
+    right: 20px;
+    transform: translate(150px, -50%);
+    width: 50px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+}
+.contacto_empresa.animado{
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+footer{
+    padding-top: 10px;
+    padding-bottom: 0;
+    font-family: 'Helveitca', Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #4c4c4c;
+    background-color: #959698;
+    text-align: center;
+}
+
+.bandera_footer{
+    width: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+.tel_span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+.titulo{
+    font-family: 'palo_seco_italic';
+    font-size: 2.5rem;
+    margin: 40px auto;
+    color: #cc2229;
+}
+.cover_gen{
+    width: 100%;
+    height: 404px;
+    overflow: hidden;
+    position: relative;
+}
+.img_cover_gen{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .titulo{
+        font-family: 'palo_seco_italic';
+        font-size: 3.5rem;
+        width: 40%;
+    }
+    .nav_bar{
+        padding: 5px 100px;
+    }
+    .slider_home_text{
+        right: 100px;
+        transform: translate(0, -50%);
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .slider_home_text span{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .acerca_de_gris{
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(250px, -50%);
+        width: 450px;
+        padding: 50px 70px;
+    }
+    .acerca_de_gris.animado{
+        transform: translate(0, -50%);
+    }
+    .acerca_de_img{
+        width: 60%;
+    }
+    .mision_globo, .vision_globo{
+        position: static;
+        top: 0;
+        left: 15px;
+        transform: translate(0, 0);
+    }
+    .val_left{
+        margin-left:12.499999995%;
+    }
+    .valor_img{
+        max-width: 50%;
+        margin: 40px auto;
+    }
+    .cover_bullet{
+        padding: 15px 35px;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .empresas_cover_cta{
+        top: 40%;
+        padding: 15px 30px;
+        font-size: 2.7rem;
+        line-height: 2.7rem;
+    }
+    .empresas_razones_titulo{
+        font-size: 3rem;
+    }
+    .empresas_razon{
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 40px 70px;
+    }
+    .col_central{
+        border-top: none;
+        border-bottom: none;
+        border-left: 2px solid #96999b;
+        border-right: 2px solid #96999b;
+        padding: 40px 40px;
+    }
+    .empresas_beneficio_cont{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .flujo_icono_texto{
+        margin: 20px auto;
+        width: 60%;
+        color: #cc2129;
+        font-size: 2rem;
+        font-family: 'palo_seco_italic';
+    }
+    .empleo_flujo_icono_img{
+        width: 190px;
+        max-width: 60%;
+    }
+    .servicios_car_rojo{
+        background: url(/assets/img/servicios_flecha.png) right center no-repeat;
+        height: 300px;
+        width: 40%;
+    }
+    .servicio_car_rojo_texto{
+        width: 70%;
+    }
+    .servicios_car_gris{
+        width: 60%;
+        height: 300px;
+        text-align: left;
+        margin-left: -100px;
+    }
+    .servicios_car_gris_blocktext{
+        left: 150px;
+        width: 65%;
+        transform: translate(0, -50%);
+    }
+    .servicio_car_gris_texto{
+        text-align: inherit;
+    }
+    .contacto_form_cont{
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .beneficio_texto{
+        font-size: 1.8rem;
+    }
+    .cover_gen{
+        height: 550px;
+    }
+    .form-group{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+.block_center{
+    margin: 0 auto!important;
+}
+input.form-control, select.form-control{
+    background-color: rgba(149, 150, 152, .3);
+}
+input, select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
