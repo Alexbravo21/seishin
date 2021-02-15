@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<a href="/contacto-empresa"><img src="assets/img/icono_contacto.png" alt="" class="contacto_empresa"></a>
+<a href="/contacto-empresa.php"><img src="assets/img/icono_contacto.png" alt="" class="contacto_empresa"></a>
 
 <div id="carouselExampleControls" class="carousel slide cover_gen" data-ride="carousel">
     <div class="carousel-inner">
@@ -9,7 +9,7 @@
             <img class="d-block w-100 d-block d-md-none img_cover_gen" src="assets/img/home_mobile.jpg" alt="First slide">
             <p class="slider_home_text">
 				<span>Eliminamos</span><br>las barreras de comunicación
-				<a href="/empresas"><button class="boton_slider_home">Conocer más</button></a>
+				<a href="/empresas.php"><button class="boton_slider_home">Conocer más</button></a>
 			</p>
         </div>
         <div class="carousel-item">
@@ -17,7 +17,7 @@
             <img class="d-block w-100 d-block d-md-none img_cover_gen" src="assets/img/home_2_mobile.jpg" alt="Second slide">
             <p class="slider_home_text">
 				<span>Contribuímos</span><br>con tu crecimiento profesional
-				<a href="/empleos"><button class="boton_slider_home">Conocer más</button></a>
+				<a href="/empleos.php"><button class="boton_slider_home">Conocer más</button></a>
 			</p>
         </div>
     </div>
