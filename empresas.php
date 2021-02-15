@@ -1,11 +1,9 @@
-<?php /* Template Name: Empresa */ ?>
+<?php include 'header.php'; ?>
 
-<?php get_header(); ?>
-
-<a href="/contacto-empresa"><img src="<?php bloginfo('template_url');?>/assets/img/icono_contacto.png" alt="" class="contacto_empresa"></a>
+<a href="/contacto-empresa.php"><img src="assets/img/icono_contacto.png" alt="" class="contacto_empresa"></a>
 <div class="empresas_cover cover_gen">
-    <img src="<?php bloginfo('template_url');?>/assets/img/empresa.jpg" alt="" class="img_cover_gen d-none d-md-block">
-    <img src="<?php bloginfo('template_url');?>/assets/img/empresa_mobile.jpg" alt="" class="img_cover_gen d-block d-md-none">
+    <img src="assets/img/empresa.jpg" alt="" class="img_cover_gen d-none d-md-block">
+    <img src="assets/img/empresa_mobile.jpg" alt="" class="img_cover_gen d-block d-md-none">
     <div class="empresas_cover_bullets">
         <div class="cover_bullet anim_izq">TERCERIZACIÓN DE PERSONAL</div>
         <div class="cover_bullet anim_izq">RECLUTAMIENTO Y SELECCIÓN</div>
@@ -88,7 +86,7 @@
                         --><div class="servicios_car_gris">
                            <div class="servicios_car_gris_blocktext">
                                 <p class="servicios_car_titulo">
-                                    <a href="/contacto-empresa">TERCERIZACIÓN DE PERSONAL</a>
+                                    <a href="/contacto-empresa.php">TERCERIZACIÓN DE PERSONAL</a>
                                 </p>
                                 <p class="servicio_car_gris_texto">
                                     La subcontratación o el recurso externo brinda a las empresas mayor flexibilidad y capacidad de adaptación al experimentar cambios en el mercado o internos, como lo puede ser  el arranque o cierre de proyectos.
@@ -107,7 +105,7 @@
                         --><div class="servicios_car_gris">
                            <div class="servicios_car_gris_blocktext">
                                 <p class="servicios_car_titulo">
-                                    <a href="/contacto-empresa">RECLUTAMIENTO Y SELECCIÓN</a>
+                                    <a href="/contacto-empresa.php">RECLUTAMIENTO Y SELECCIÓN</a>
                                 </p>
                                 <p class="servicio_car_gris_texto">
                                     En Seishin te ayudamos buscar a la persona adecuada para tus necesidades.<br>
@@ -127,7 +125,7 @@
                         --><div class="servicios_car_gris">
                            <div class="servicios_car_gris_blocktext">
                                 <p class="servicios_car_titulo">
-                                    <a href="/contacto-empresa">OTROS SERVICIOS</a>
+                                    <a href="/contacto-empresa.php">OTROS SERVICIOS</a>
                                 </p>
                                 <div class="servicio_car_gris_texto">
                                     <ul class="servicio_car_gris_texto">
@@ -146,5 +144,4 @@
     </div>
 </div>
 
-
-<?php get_footer(); ?>
+<?php include 'footer.php'; ?>

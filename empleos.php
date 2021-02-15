@@ -1,10 +1,8 @@
-<?php /* Template Name: Empleos */ ?>
-
-<?php get_header(); ?>
+<?php include 'header.php'; ?>
 
 <div class="empleos_cover cover_gen">
-    <img src="<?php bloginfo('template_url');?>/assets/img/empleos.jpg" alt="" class="img_cover_gen d-none d-md-block">
-    <img src="<?php bloginfo('template_url');?>/assets/img/empleos_mobile.jpg" alt="" class="img_cover_gen d-block d-md-none">
+    <img src="assets/img/empleos.jpg" alt="" class="img_cover_gen d-none d-md-block">
+    <img src="assets/img/empleos_mobile.jpg" alt="" class="img_cover_gen d-block d-md-none">
     <div class="empleos_cover_cta anim_izq">
         Se parte de nuestra red de traductores.
     </div>
@@ -82,33 +80,33 @@
     <div class="empleos_flujo_iconos col-12">
         <div class="row">
             <div class="col-6 col-md-4 empleo_flujo_icono_cont">
-                <img src="<?php bloginfo('template_url');?>/assets/img/agenda.jpg" alt="" class="empleo_flujo_icono_img">
+                <img src="assets/img/agenda.jpg" alt="" class="empleo_flujo_icono_img">
                 <p class="flujo_icono_texto">Agenda tu cita</p>
             </div>
             <div class="col-6 col-md-4 empleo_flujo_icono_cont">
-                <img src="<?php bloginfo('template_url');?>/assets/img/registro.jpg" alt="" class="empleo_flujo_icono_img">
+                <img src="assets/img/registro.jpg" alt="" class="empleo_flujo_icono_img">
                 <p class="flujo_icono_texto">Registro de datos personales</p>
             </div>
             <div class="col-6 col-md-4 empleo_flujo_icono_cont">
-                <img src="<?php bloginfo('template_url');?>/assets/img/ubicacion.jpg" alt="" class="empleo_flujo_icono_img">
+                <img src="assets/img/ubicacion.jpg" alt="" class="empleo_flujo_icono_img">
                 <p class="flujo_icono_texto">Punto de reunion</p>
             </div>
             <div class="col-6 col-md-4 empleo_flujo_icono_cont">
-                <img src="<?php bloginfo('template_url');?>/assets/img/test.jpg" alt="" class="empleo_flujo_icono_img">
+                <img src="assets/img/test.jpg" alt="" class="empleo_flujo_icono_img">
                 <p class="flujo_icono_texto">Verificación de habilidades</p>
             </div>
             <div class="col-6 col-md-4 empleo_flujo_icono_cont">
-                <img src="<?php bloginfo('template_url');?>/assets/img/entrevista.jpg" alt="" class="empleo_flujo_icono_img">
+                <img src="assets/img/entrevista.jpg" alt="" class="empleo_flujo_icono_img">
                 <p class="flujo_icono_texto">Consulta sobre empleos disponibles</p>
             </div>
             <div class="col-6 col-md-4 empleo_flujo_icono_cont">
-                <img src="<?php bloginfo('template_url');?>/assets/img/presentacion.jpg" alt="" class="empleo_flujo_icono_img">
+                <img src="assets/img/presentacion.jpg" alt="" class="empleo_flujo_icono_img">
                 <p class="flujo_icono_texto">Presentación de empleo</p>
             </div>
         </div>
-        <a href="/contacto"><button type="button" class="boton_contacto block_center">REGISTRATE</button></a>
+        <a href="/contacto.php"><button type="button" class="boton_contacto block_center">REGISTRATE</button></a>
     </div>
 </div>
 
 
-<?php get_footer(); ?>
+<?php include 'footer.php'; ?>

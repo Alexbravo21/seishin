@@ -1,10 +1,8 @@
-<?php /* Template Name: Contacto Empresa */ ?>
-
-<?php get_header(); ?>
+<?php include 'header.php'; ?>
 
 <div class="empresas_cover cover_gen">
-    <img src="<?php bloginfo('template_url');?>/assets/img/contacto.jpg" alt="" class="img_cover_gen d-none d-md-block">
-    <img src="<?php bloginfo('template_url');?>/assets/img/contacto_mobile.jpg" alt="" class="img_cover_gen d-block d-md-none">
+    <img src="assets/img/contacto.jpg" alt="" class="img_cover_gen d-none d-md-block">
+    <img src="assets/img/contacto_mobile.jpg" alt="" class="img_cover_gen d-block d-md-none">
 </div>
 
 <div class="contacto_form_cont container">
@@ -49,4 +47,4 @@
     </form>	
 </div>
 
-<?php get_footer(); ?>
+<?php include 'footer.php'; ?>

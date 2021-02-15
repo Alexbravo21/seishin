@@ -30,7 +30,7 @@ function contacto_empresa(){
 			alert("Por favor completa todos los campos");
 		}else{
 			$(this).prop('disabled', true);
-			$.post("/contacto_empresa.php", {empresa_nombre:empresa_nombre, empresa_nombre_empresa:empresa_nombre_empresa, empresa_telefono:empresa_telefono, empresa_correo:empresa_correo, empresa_comentario:empresa_comentario}, function (data) {
+			$.post("/contacto_empresa_env.php", {empresa_nombre:empresa_nombre, empresa_nombre_empresa:empresa_nombre_empresa, empresa_telefono:empresa_telefono, empresa_correo:empresa_correo, empresa_comentario:empresa_comentario}, function (data) {
 				var respuesta = JSON.parse(data);
 				if(respuesta.success){
 					alert("Gracias por ponerte en contacto, nos comunicaremos contigo enseguida.");
@@ -82,7 +82,7 @@ function contacto_empleos(){
 					data = JSON.parse(response);
 					var cv = data.path;
 
-					$.post("/contacto.php", {nombre:nombre, dia:dia, mes:mes, anio:anio, direccion:direccion, estado:estado, telefono:telefono, correo:correo, disponibilidad_viajar:disponibilidad_viajar, tipo_trabajo:tipo_trabajo, idioma:idioma, idioma_lvl:idioma_lvl, estado_laboral:estado_laboral, disponibilidad: disponibilidad, cv:cv}, function (data_respuesta) {
+					$.post("/contacto_env.php", {nombre:nombre, dia:dia, mes:mes, anio:anio, direccion:direccion, estado:estado, telefono:telefono, correo:correo, disponibilidad_viajar:disponibilidad_viajar, tipo_trabajo:tipo_trabajo, idioma:idioma, idioma_lvl:idioma_lvl, estado_laboral:estado_laboral, disponibilidad: disponibilidad, cv:cv}, function (data_respuesta) {
 						var respuesta = JSON.parse(data_respuesta);
 						if(respuesta.success){
 							alert("Gracias por enviar tu solicitud, nos comunicaremos contigo enseguida.");

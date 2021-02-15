@@ -1,6 +1,4 @@
-<?php /* Template Name: Empresa */ ?>
-
-<?php get_header(); ?>
+<?php include 'header.php'; ?>
 
 <?php
 // TO SHOW THE PAGE CONTENTS
@@ -13,4 +11,4 @@
 ?>
 
 
-<?php get_footer(); ?>
+<?php include 'footer.php'; ?>
