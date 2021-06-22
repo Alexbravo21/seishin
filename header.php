@@ -19,7 +19,6 @@
                     <li class="col-2 offset-1"><a href="/empresas.php">Empresas</a></li>
                     <li class="col-2"><a href="/empleos.php">Empleos</a></li>
                     <li class="col-4"><a href="mailto:info@seishin.com.mx">info@seishin.com.mx</a></li>
-                    <li class="col-3 tel_menu" style="opacity:0"><a href="tel:+15255559476086">55-59-47-60-86</a></li>
                 </ul>
             </nav>
             <div class="col-md-2 text-center" style="opacity:0">
